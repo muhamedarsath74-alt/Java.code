@@ -1,0 +1,20 @@
+Employee.java
+package employees;
+public class Employee {
+    protected String name;
+
+    public Employee(String name) {
+        this.name = name;
+    }
+}
+
+// Manager.java
+package employees;
+import employees.Employee;
+
+public class Manager {
+    public void useEmployee() {
+        Employee employee = new Employee("John");
+        System.out.println(employee.name);
+    }
+}
