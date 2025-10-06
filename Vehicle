@@ -1,0 +1,28 @@
+class Vehicle {
+    void drive() {
+        System.out.println("Driving vehicle");
+    }
+}
+
+class Car extends Vehicle {
+    void honk() {
+        System.out.println("Car honking");
+    }
+}
+
+class Bike extends Vehicle {
+    void wheelie() {
+        System.out.println("Bike doing wheelie");
+    }
+}
+
+public class VehicleManagement {
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.drive();
+        car.honk();
+        Bike bike = new Bike();
+        bike.drive();
+        bike.wheelie();
+    }
+}
